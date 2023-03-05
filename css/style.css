@@ -1,0 +1,25 @@
+body {
+	font-family: 'Golos Text', sans-serif;
+}
+
+.grid {
+	text-align: center;
+}
+
+.compare-pair {
+	display: flex;
+}
+
+.compair-pair__item {
+	max-width: 47%;
+	padding-top: 30px;
+}
+
+.compair-pair__item--after {
+	border-left: 3px solid #000;
+}
+
+.compair-pair__heading {
+	font-size: 20px;
+	text-decoration: underline;
+}
