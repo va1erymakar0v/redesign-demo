@@ -6,8 +6,14 @@ body {
 	text-align: center;
 }
 
+.grid__heading {
+	padding: 20px 0;
+}
+
 .compare-pair {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .compair-pair__item {
@@ -15,11 +21,28 @@ body {
 	padding-top: 30px;
 }
 
+.compair-pair__img {
+	display: block;
+	width: 100%;
+}
+
 .compair-pair__item--after {
-	border-left: 3px solid #000;
+	border-left: 2px solid #000;
 }
 
 .compair-pair__heading {
 	font-size: 20px;
 	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	.compare-pair {
+		flex-direction: column;
+	}
+	.compair-pair__item {
+		max-width: 100%;
+	}
+	.compair-pair__item--after {
+		border-left: none;
+	}
 }
